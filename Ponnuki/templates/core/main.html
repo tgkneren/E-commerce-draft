@@ -1,0 +1,652 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.jpg' %}" type="image/x-icon">
+  <title>
+    PONNUKI
+  </title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet"  href="{%static 'css/owl.carousel.min.css'%}" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet"  href="{% static 'css/bootstrap.css'%} "/>
+
+  <!-- Custom styles for this template -->
+  <link href="{%static 'css/style.css'%}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{%static 'css/responsive.css'%}" rel="stylesheet" />
+
+ 
+
+
+</head>
+
+<body>
+
+
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="{% url 'core:main' %}">
+       
+          <span>
+            Ponnuki Jewelry
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  ">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'core:main' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'core:shop' %}">Shop</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'core:testimonial' %}">Testimonial</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'core:contact' %}">Contact Us</a>
+            </li>
+            
+          </ul>
+          <div class="user_option">
+            <a href="{% url 'core:login'%}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Login
+              </span>
+            </a>
+            <a href="{% url 'core:sign_up'%}">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>
+                Sign Up
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline ">
+              <button class="btn nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+
+    <section class="slider_section">
+      <div class="slider_container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Welcome to Our <br>
+                        Online Store
+                    
+                      </h1>
+                      <p>
+                        Ponnuki Jewelry fuses the aesthetics of nature with the elegance of everyday style. Each of our handcrafted pieces stands out with its creative touch and graceful design. Simple yet original, our jewelry complements every moment and brings nature's magic to your style.
+                      </p>
+                      <a href="{% url 'core:contact' %}">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ">
+                    <div class="img-box">
+                      <img src="{%static 'images/logotp.png'%}"  alt="My Image">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Who Are We?
+                      </h1>
+                      <p>
+                        Welcome to Ponnuki Jewelry, where tradition meets modernity in every handcrafted piece we curate. With over 10 years of experience, our roots run deep in the art of jewelry making, using natural stones to craft pieces that tell a story. From local fairs to our vibrant online store, our creations embody a spirit of authenticity and timeless craftsmanship. Join us in celebrating the beauty of handcrafted elegance.
+                      </p>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ">
+                    <div class="img-box">
+                      <img src="{%static 'images/slider1.png'%}" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-7">
+                    <div class="detail-box">
+                      <h1>
+                        Explore Your <br>
+                        Unique Style
+                      </h1>
+                      <p>
+                        Step into a world of charming uniqueness with our handcrafted jewelry. Each piece in our collection offers a distinct flair to suit your style. Find your favorite new accessory and embrace the joy of personal expression with our lovingly made creations.
+                      </p>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-5 ">
+                    <div class="img-box">
+                      <img src="{%static 'images/slider2.png'%}"alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_btn-box">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <img src="{%static 'images/line.png'%}" alt="" />
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end slider section -->
+  </div>
+  <!-- end hero area -->
+
+  <!-- shop section -->
+
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Latest Products
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p1.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Ametist Necklace <br>
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p2.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Mother-of-Pearl Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p3.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Fimo Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p4.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Turquoise Rondelle Beads Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p5.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Blue Fimo Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p6.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Green Turquoise Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p7.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Turquoise Necklace
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $40
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="">
+              <div class="img-box">
+                <img src="{%static 'images/p8.png'%}" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  Glass Bead Bracelet
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $25
+                  </span>
+                </h6>
+              </div>
+              <div class="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          View All Products
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end shop section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container px-0">
+      <div class="heading_container ">
+        <h2 class="">
+          Contact Us
+        </h2>
+      </div>
+    </div>
+    <div class="container container-bg" style="background-color: rgb(213, 181, 181);">
+      <div class="row">    
+              <div class="col-lg-7 col-md-6 px-0" style="text-align: right;">
+                <img src="{% static 'images/logotp.png' %}" alt="Ponnuki Jewelry Logo" style="display: block; margin: auto; max-width: 100%; height: 400px;">
+                         
+              </div>
+      <div class="col-md-6 col-lg-5 px-0">
+          <form action="#">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Message" />
+            </div>
+            <div class="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div id="customCarousel2" class="carousel  carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    --
+                  </h5>
+                  <h6>
+                    --
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                --
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    --
+                  </h5>
+                  <h6>
+                    --
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="client_info">
+                <div class="client_name">
+                  <h5>
+                    --
+                  </h5>
+                  <h6>
+                    --
+                  </h6>
+                </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+              </div>
+              <p>
+                --
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end client section -->
+  
+  <!-- info section -->
+
+  <section class="info_section  layout_padding2-top">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="info_container ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              ABOUT US
+            </h6>
+            <p>
+              -----
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_form ">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="#">
+                <input type="email" placeholder="Enter your email">
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              NEED HELP
+            </h6>
+            <p>
+               -----
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h6>
+              CONTACT US
+            </h6>
+            <div class="info_link-box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>-- </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>--</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span> --@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- footer section -->
+    <footer class=" footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a>
+        </p>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+  </section>
+
+  <!-- end info section --> 
+ 
+
+  <script src="{%static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script src="{%static 'js/bootstrap.js'%}"></script>
+  <script src="{%static 'js/custom.js' %}"></script>
+  <script src="{%static 'js/owl.carousel.min.js'%}"></script>
+  
+  {%block scripts%}
+
+  <script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+    });
+  });
+      </script>
+      {%endblock scripts%}
+
+</body>
+
+</html>

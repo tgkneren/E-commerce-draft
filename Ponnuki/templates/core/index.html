@@ -1,0 +1,28 @@
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+<link rel="stylesheet" href="{%static 'css/responsive.css'%}">
+<link rel="stylesheet" href="{%static 'css/style.css.map'%}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{%static 'css/bootstrap.css'%}">
+<link rel="stylesheet" href="{%static 'css/style.scss'%}">
+<link rel="stylesheet" href="{%static 'css/font-awesome.min.css'&}">
+</head>
+<body>
+    <h1>test    </h1>
+    {% for image in images %}
+   
+    <img src="{% static 'images/'|add:image %}" alt="{{ image }}">
+
+     {% endfor %}
+   
+</body>
+</html>
